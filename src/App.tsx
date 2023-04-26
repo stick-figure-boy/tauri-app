@@ -1,16 +1,16 @@
-import { invoke } from "@tauri-apps/api/tauri";
-import { useState } from "react";
+import { invoke } from '@tauri-apps/api/tauri'
+import { useState } from 'react'
 
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import reactLogo from './assets/react.svg'
+import './App.css'
 
 const App = () => {
-  const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
+  const [greetMsg, setGreetMsg] = useState('')
+  const [name, setName] = useState('')
 
   async function greet() {
     // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-    setGreetMsg(await invoke("greet", { name }));
+    setGreetMsg(await invoke('greet', { name }))
   }
 
   return (
@@ -34,21 +34,17 @@ const App = () => {
       <div className="row">
         <form
           onSubmit={(e) => {
-            e.preventDefault();
-            void greet();
+            e.preventDefault()
+            void greet()
           }}
         >
-          <input
-            id="greet-input"
-            onChange={(e) => setName(e.currentTarget.value)}
-            placeholder="Enter a name..."
-          />
+          <input id="greet-input" onChange={(e) => setName(e.currentTarget.value)} placeholder="Enter a name..." />
           <button type="submit">Greet</button>
         </form>
       </div>
       <p>{greetMsg}</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
