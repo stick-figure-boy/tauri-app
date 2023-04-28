@@ -14,11 +14,7 @@ export const RouterConfig = () => (
   <BrowserRouter>
     <Routes>
       <Route path={route.home} element={<HomePage />} />
-    </Routes>
-    <Routes>
       <Route path={route.teams} element={<TeamListPage />} />
-    </Routes>
-    <Routes>
       <Route path={route.members} element={<MemberListPage />} />
     </Routes>
   </BrowserRouter>
