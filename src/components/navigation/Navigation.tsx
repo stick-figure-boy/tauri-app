@@ -10,21 +10,22 @@ import ListItemText from '@mui/material/ListItemText'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 
-import { Hooks } from './hooks'
+import { useNavigation } from './Navigation.hooks'
 
 // TODO
 const drawerWidth = 240
 
 export const Navigation = () => {
-  const hooks = Hooks()
+  const { menu, handleMovePage } = useNavigation()
+
   const drawer = (
     <div>
       <Toolbar />
       <Divider />
       <List>
-        {hooks.menu.map((m, _) => (
+        {menu.map((m, _) => (
           <ListItem key={m.menu} disablePadding>
-            <ListItemButton onClick={() => hooks.handleMovePage(m.link)}>
+            <ListItemButton onClick={() => handleMovePage(m.link)}>
               <ListItemText primary={m.menu} />
             </ListItemButton>
           </ListItem>

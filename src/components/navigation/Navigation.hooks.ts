@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { route } from '../../RouteConfig'
 
-export const Hooks = () => {
+export const useNavigation = () => {
   type Menu = {
     menu: string
     link: string

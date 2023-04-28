@@ -12,7 +12,7 @@ The file name must pascal case and end with `Page`.
 
 The components placed here are specific a page or feature.
 Page or Component files describe only the DOM.
-The business logic is described in the `hooks.ts` file and the style in `style.ts`.
+The business logic is described in the `hook.ts` file and the style in `style.ts`.
 
 ```
 ex)
@@ -23,24 +23,24 @@ pages
         |     └── tabs
         |           └── settingMenuTab
         |                 ├── SettingMenuTab.tsx
+        |                 ├── hooks.ts
         |                 ├── hooks.test.ts
-        |                 ├── style.ts
-        |                 └── hooks.ts
+        |                 └── style.ts
         ├── profile
         |     ├── components
         |     |     └── avatar
         |     |           └── avatarUploader
         |     |                 ├── AvatarUploader.tsx
+        |     |                 ├── hooks.ts
         |     |                 ├── hooks.test.ts
-        |     |                 ├── style.ts
-        |     |                 └── hooks.ts
+        |     |                 └── style.ts
         |     ├── ProfilePage.tsx
+        |     ├── hooks.ts
         |     ├── hooks.test.ts
-        |     ├── style.ts
-        |     └── hooks.ts
+        |     └── style.ts
         └── Notify
               ├── NotifyPage.tsx
+              ├── hooks.ts
               ├── hooks.test.ts
-              ├── style.ts
-              └── hooks.ts
+              └── style.ts
 ```

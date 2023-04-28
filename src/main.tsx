@@ -6,7 +6,7 @@ import { RecoilRoot } from 'recoil'
 import reportWebVitals from './reportWebVitals'
 import { RouterConfig } from './RouteConfig'
 
-// import '@/index.css'
+import './styles.css'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,8 +1,8 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
 import { HomePage } from './pages/home/HomePage'
-import { MemberListPage } from './pages/members/memberList/MemberListPage'
-import { TeamListPage } from './pages/teams/teamList/TeamListPage'
+import { MemberListPage } from './pages/member/memberList/MemberListPage'
+import { TeamListPage } from './pages/team/teamList/TeamListPage'
 
 export const route = {
   home: '/',

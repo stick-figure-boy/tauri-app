@@ -23,6 +23,7 @@ module.exports = {
     plugins: ['react', '@typescript-eslint', 'import', 'unused-imports'],
     ignorePatterns: ['.eslintrc.js'],
     rules: {
+      "no-useless-catch": "off",
       'max-classes-per-file': 'off',
       'no-use-before-define': 'off',
       '@typescript-eslint/no-use-before-define': ['error'],

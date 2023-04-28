@@ -11,7 +11,7 @@ components
   └── from
         └── textFrom
               ├── TextFrom.tsx
-              ├── hooks.test.ts
               ├── hooks.ts
+              ├── hooks.test.ts
               └── style.ts
 ```
