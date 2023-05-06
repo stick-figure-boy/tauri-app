@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
-import { route } from '../../RouteConfig'
+import { PrivatePath } from '../../RouteConfig'
 
 export const useNavigation = () => {
   type Menu = {
@@ -8,9 +8,9 @@ export const useNavigation = () => {
     link: string
   }
   const menu: Menu[] = [
-    { menu: 'Home', link: route.home },
-    { menu: 'Teams', link: route.teams },
-    { menu: 'Members', link: route.members },
+    { menu: 'Home', link: PrivatePath.home },
+    { menu: 'Teams', link: PrivatePath.teams },
+    { menu: 'Members', link: PrivatePath.members },
   ]
 
   const navigate = useNavigate()

@@ -9,9 +9,5 @@ ex)
 
 components
   └── from
-        └── textFrom
-              ├── TextFrom.tsx
-              ├── hooks.ts
-              ├── hooks.test.ts
-              └── style.ts
+        └── TextFrom.tsx
 ```

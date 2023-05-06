@@ -20,6 +20,13 @@ sqlx = { version = "0.6.3", features = ["runtime-tokio-rustls", "sqlite", "migra
 tokio = { version = "1.28.0", features = ["full"] }
 futures = "0.3.28"
 directories = "5.0.0"
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.8.2"
+async-trait = "0.1.68"
+mockall = "0.11.4"
+anyhow = "1.0.71"
+thiserror = "1.0.40"
+validator = { version = "0.16.0", features = ["derive"] }
 
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem

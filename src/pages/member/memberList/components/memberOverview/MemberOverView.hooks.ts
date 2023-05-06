@@ -1,6 +1,12 @@
+import { useNavigate } from 'react-router-dom'
+
 import { RadarChartData } from '../../../../../components/chart/radarChart/RadarChart'
+import { PrivatePath } from '../../../../../RouteConfig'
 
 export const useMemberOverView = () => {
+  const navigate = useNavigate()
+
+  // TODO
   const chartData: RadarChartData[] = [
     {
       subject: 'Backend',
@@ -24,7 +30,12 @@ export const useMemberOverView = () => {
     },
   ]
 
+  const handleMoveDetail = (accountID: string) => {
+    navigate(`${PrivatePath.members}/${accountID}`)
+  }
+
   return {
     chartData,
+    handleMoveDetail,
   }
 }

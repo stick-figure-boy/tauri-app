@@ -13,7 +13,7 @@ export const RadarChart = (props: Props) => {
   const { chartData } = props
 
   return (
-    <ResponsiveContainer width="100%" height={200}>
+    <ResponsiveContainer width="100%" height={180}>
       <RChart cx="50%" cy="50%" outerRadius="80%" data={chartData}>
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" />

@@ -3,7 +3,7 @@ import { invoke } from '@tauri-apps/api'
 import { Member } from './model'
 
 const handler = {
-  getMembers: 'get_members',
+  getMembers: 'get_roles',
 } as const
 
 export const memberRepository = () => {
